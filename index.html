@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Mobility - O Futuro Elétrico</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+        body { background-color: #0b0f19; color: #f3f4f6; line-height: 1.6; }
+
+        /* Header & Nav */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 24px 8%; background: #111827; border-bottom: 1px solid #1f2937; position: sticky; top: 0; z-index: 100; }
+        .logo { font-size: 22px; font-weight: 800; color: #10b981; letter-spacing: 1px; }
+        nav a { color: #9ca3af; text-decoration: none; margin-left: 32px; font-weight: 500; transition: color 0.2s; }
+        nav a:hover { color: #ffffff; }
+
+        /* Hero Section */
+        .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 80px 8% 60px; background: linear-gradient(180deg, #111827 0%, #0b0f19 100%); }
+        .hero h1 { font-size: 48px; font-weight: 800; max-width: 800px; margin-bottom: 16px; letter-spacing: -1px; }
+        .hero p { color: #9ca3af; font-size: 18px; max-width: 580px; margin-bottom: 32px; }
+        .hero-actions { display: flex; gap: 16px; margin-bottom: 48px; }
+        
+        /* Image Placeholders */
+        .img-placeholder { background: #1f2937; border: 2px dashed #374151; border-radius: 12px; display: flex; align-items: center; justify-content: center; color: #6b7280; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; font-size: 13px; }
+        .hero-img-placeholder { width: 100%; max-width: 1000px; height: 420px; }
+
+        /* Model Grid Section */
+        .models-section { padding: 80px 8%; }
+        .section-header { text-align: center; margin-bottom: 56px; }
+        .section-header h2 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+        .section-header p { color: #9ca3af; }
+
+        .grid-models { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px; }
+        .card { background: #111827; border: 1px solid #1f2937; border-radius: 16px; padding: 24px; display: flex; flex-direction: column; }
+        .card-img-placeholder { width: 100%; height: 220px; margin-bottom: 24px; }
+        .card h3 { font-size: 24px; font-weight: 700; margin-bottom: 4px; }
+        .card .subtitle { color: #9ca3af; font-size: 14px; margin-bottom: 20px; }
+
+        /* Specs Breakdown */
+        .specs-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; background: #0b0f19; padding: 16px; border-radius: 8px; margin-bottom: 24px; text-align: center; }
+        .spec-item span { display: block; font-size: 11px; color: #6b7280; text-transform: uppercase; }
+        .spec-item strong { font-size: 16px; color: #10b981; }
+
+        /* Buttons & Actions */
+        .btn { display: inline-flex; align-items: center; justify-content: center; padding: 12px 24px; border-radius: 8px; font-weight: 600; text-decoration: none; transition: 0.2s; cursor: pointer; border: none; }
+        .btn-primary { background: #10b981; color: #0b0f19; }
+        .btn-primary:hover { background: #059669; }
+        .btn-secondary { background: #1f2937; color: #ffffff; }
+        .btn-secondary:hover { background: #374151; }
+        .btn-card { width: 100%; margin-top: auto; }
+
+        /* Footer */
+        footer { border-top: 1px solid #1f2937; padding: 40px 8%; text-align: center; color: #6b7280; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">VOLT.</div>
+        <nav>
+            <a href="#modelos">Modelos</a>
+            <a href="#tecnologia">Tecnologia</a>
+            <a href="#recarga">Rede de Recarga</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>O futuro da mobilidade é 100% elétrico</h1>
+        <p>Performance extraordinária, zero emissões e tecnologia autônoma de última geração.</p>
+        <div class="hero-actions">
+            <a href="#modelos" class="btn btn-primary">Ver Modelos</a>
+            <a href="#" class="btn btn-secondary">Agendar Test Drive</a>
+        </div>
+        
+        <div class="img-placeholder hero-img-placeholder">
+            [ Imagem Hero: Carro Elétrico em Destaque ]
+        </div>
+    </section>
+
+    <section class="models-section" id="modelos">
+        <div class="section-header">
+            <h2>Nossa Linha de Veículos</h2>
+            <p>Escolha o modelo ideal para o seu estilo de vida.</p>
+        </div>
+
+        <div class="grid-models">
+            
+            <article class="card">
+                <div class="img-placeholder card-img-placeholder">
+                    [ Imagem: Volt Sedan S ]
+                </div>
+                <h3>Volt Sedan S</h3>
+                <p class="subtitle">Elegância e Autonomia Urbana</p>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span>Autonomia</span>
+                        <strong>520 km</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span>0-100 km/h</span>
+                        <strong>3.8s</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span>Recarga</span>
+                        <strong>25 min</strong>
+                    </div>
+                </div>
+
+                <a href="/modelo-sedan-s.html" class="btn btn-secondary btn-card">Ver Detalhes do Modelo</a>
+            </article>
+
+            <article class="card">
+                <div class="img-placeholder card-img-placeholder">
+                    [ Imagem: Volt SUV X ]
+                </div>
+                <h3>Volt SUV X</h3>
+                <p class="subtitle">Espaço, Potência e Tração Integral</p>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span>Autonomia</span>
+                        <strong>610 km</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span>0-100 km/h</span>
+                        <strong>4.1s</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span>Recarga</span>
+                        <strong>20 min</strong>
+                    </div>
+                </div>
+
+                <a href="/modelo-suv-x.html" class="btn btn-secondary btn-card">Ver Detalhes do Modelo</a>
+            </article>
+
+            <article class="card">
+                <div class="img-placeholder card-img-placeholder">
+                    [ Imagem: Volt Roadster GT ]
+                </div>
+                <h3>Volt Roadster GT</h3>
+                <p class="subtitle">Alta Performance e Design Aerodinâmico</p>
+                
+                <div class="specs-grid">
+                    <div class="spec-item">
+                        <span>Autonomia</span>
+                        <strong>480 km</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span>0-100 km/h</span>
+                        <strong>2.1s</strong>
+                    </div>
+                    <div class="spec-item">
+                        <span>Recarga</span>
+                        <strong>18 min</strong>
+                    </div>
+                </div>
+
+                <a href="/modelo-roadster-gt.html" class="btn btn-secondary btn-card">Ver Detalhes do Modelo</a>
+            </article>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 VOLT Mobility. Todos os direitos reservados. Projeto base para prototipagem no Figma.</p>
+    </footer>
+
+</body>
+</html>
